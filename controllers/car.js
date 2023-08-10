@@ -26,7 +26,7 @@ export const createCar = async (req, res) => {
 export const getAllCars = async (req, res) => {
     try {
         const allCars = await Car.find();
-        res.status(500).json({ message: "Successfully fetched data", allCars });
+        res.status(200).json({ message: "Successfully fetched data", allCars });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
