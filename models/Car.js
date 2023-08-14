@@ -19,6 +19,25 @@ const carSchema = mongoose.Schema({
     },
     carImage: {
         type: String
+    },
+    post: {
+        type: String
+    },
+    ownerName: {
+        type: String,
+        required: true
+    },
+    carSeats: {
+        type: Number
+    },
+    carTankSize: {
+        type: Number
+    },
+    carColor: {
+        type: String
+    },
+    location: {
+        type: String
     }
 });
 
